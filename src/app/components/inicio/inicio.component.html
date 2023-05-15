@@ -1,0 +1,112 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+
+    <div class="divPad1">
+        <div class="divTend">
+            Tendencia
+        </div>
+        <div class="divPadCajas">
+            <div class="divPadCajGru1">
+                <div class="divPadCaj1 col-7">
+                    <div class="card text-bg-dark mb-3" style="width: 96%;height: 100%; margin: 20px;"
+                        *ngFor="let item of arrayTendencia.slice(0,1);">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{item.nombre}}</h5>
+                            <p class="card-text">{{item.apellido}}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divPadCaj2 col-5">
+                    <div class="card text-bg-dark mb-3" style="width: 96%;height: 100%; margin: 20px;"
+                        *ngFor="let item of arrayTendencia.slice(1,2);">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{item.nombre}}</h5>
+                            <p class="card-text">{{item.apellido}}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div>
+                <div class="divPadCajGru2">
+                    <div class="divPadCaj3 col-5">
+                        <div class="card text-bg-dark mb-3" style="width: 96%;height: 100%; margin: 20px;"
+                            *ngFor="let item of arrayTendencia.slice(2,3);">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{item.nombre}}</h5>
+                                <p class="card-text">{{item.apellido}}</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="divPadCaj4 col-7">
+                        <div class="card text-bg-dark mb-3" style="width: 96%;height: 100%; margin: 20px;"
+                            *ngFor="let item of arrayTendencia.slice(3,4);">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{item.nombre}}</h5>
+                                <p class="card-text">{{item.apellido}}</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="divCat col-12">
+    VideoJuegos :
+</div>
+<div class="divDire">
+    <div class="card text-bg-dark mb-3" style="width: 100%;height: 100%; margin: 20px;"
+        *ngFor="let item of arrayVideoJuegos">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{item.nombre}}</h5>
+            <p class="card-text">{{item.apellido}}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+
+<div class="divCat col-12">
+    Juegos de mesa :
+</div>
+
+<div class="divDire col-12">
+    <div class="card text-bg-dark mb-3" style="width: 100%;height: 100%; margin: 20px;"
+        *ngFor="let item of arrayVideoJuegos">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{item.nombre}}</h5>
+            <p class="card-text">{{item.apellido}}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+<div class="divCat col-12">
+    Deportes :
+</div>
+
+<div class="divDire col-12">
+    <div class="card text-bg-dark mb-3" style="width: 100%;height: 100%; margin: 20px;"
+        *ngFor="let item of arrayVideoJuegos">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{item.nombre}}</h5>
+            <p class="card-text">{{item.apellido}}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
