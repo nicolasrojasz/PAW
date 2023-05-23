@@ -1,0 +1,15 @@
+<div class="container  justify-content-center align-items-center col-4">
+    <div class="col-auto p-4 ">
+        <h3>Inicia Sesion!!</h3>
+        <div class=" form">
+            <p>Correo:</p>
+            <input type="text" class="form-control" [(ngModel)]="usuario" />
+            <p>Contraseña:</p>
+            <input type="password" class="form-control" [(ngModel)]="contrasena" />
+            <div class="mt-4 text-center">
+
+                <button class="btn btn-primary" (click)="login()">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>

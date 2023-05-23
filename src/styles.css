@@ -1,5 +1,7 @@
-body{
-    margin:0;
-    font-family: 'Signika Negative', sans-serif !important;
-    background-color: #2F2242;
+body {
+  margin: 0;
+  width: auto;
+  height: auto;
+  font-family: "Signika Negative", sans-serif !important;
+  background-color: #202426 !important;
 }

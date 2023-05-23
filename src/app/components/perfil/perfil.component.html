@@ -1,1 +1,49 @@
-<p>perfil works!</p>
+<div class="container">
+
+    <div class="card col-8">
+        <h5 class="card-header">Información</h5>
+        <div class="card-body" style="display:flex">
+            <div class="col-6" *ngFor="let info of personas">
+                <img src="assets/img/usuario.png" alt="" />
+
+            </div>
+            <div class="col-6">
+                <div class="form" *ngFor="let info of personas">
+                    <h3>Nombre:</h3>
+                    <p>
+                        {{ info.nombre }}
+                    </p>
+                    <h3>Apellidos:</h3>
+                    <p>
+                        {{ info.apellidos }}
+                    </p>
+
+                    <h3>Edad:</h3>
+                    <p>
+                        {{ info.fec_nac }}
+                    </p>
+
+                    <h3>Pais:</h3>
+                    <p>
+                        {{ info.Pais }}
+                    </p>
+
+                    <h3>Correo:</h3>
+                    <p>
+
+                        {{ info.usuario }}
+                    </p>
+                    <h3>Nickname: {{info.apodo}}</h3>
+                    <input type="text" class="form-control" [(ngModel)]="nuevoApodo" />
+
+                    <div class="divBtn">
+
+                        <button class="btn btn-success" (click)="actualizarApodo()">Confirmar</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

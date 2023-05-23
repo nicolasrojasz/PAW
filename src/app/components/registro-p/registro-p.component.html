@@ -1,0 +1,24 @@
+<div class="container  justify-content-center align-items-center col-4">
+    <div class="col-auto p-4 ">
+        <h3>Unete a nosotros!!</h3>
+        <div class=" form">
+            <p>Cedula:</p>
+            <input type="number" class="form-control" [(ngModel)]="cedula" />
+            <p>Nombre:</p>
+            <input type="text" class="form-control" [(ngModel)]="nombre" />
+            <p>Apellidos:</p>
+            <input type="text" class="form-control" [(ngModel)]="apellidos" />
+            <p>Pais:</p>
+            <input type="text" class="form-control" [(ngModel)]="pais" />
+            <p>Fecha nacimiento:</p>
+            <input type="date" class="form-control" [(ngModel)]="fec_nac" />
+
+            <div class="mt-4 text-center" style="display: flex; flex-direction: column;">
+                <a class="mb-2" href="nuevoUsuario">
+                    <button class="btn btn-primary" (click)="registrar()">Confirmar</button>
+                </a>
+                <a href="registrarEmpresa">Registrar Empresa</a>
+            </div>
+        </div>
+    </div>
+</div>

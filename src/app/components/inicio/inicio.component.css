@@ -1,3 +1,7 @@
+img {
+  width: auto;
+  height: 200px;
+}
 .divPad1 {
   display: flex;
   flex-direction: column;
@@ -6,17 +10,10 @@
   padding: 20px 0px 20px 0px;
   font-size: 40px;
   text-align: center;
-  color: #F27777;
-}
-.divPadCajGru1 {
- 
-  display: flex;
-  height: 300px;
-  margin-bottom: 30px;
+  color: #f27777;
 }
 
 .divPadCajGru2 {
-
   display: flex;
   height: 300px;
   margin-bottom: 30px;
@@ -24,11 +21,11 @@
 
 .divCat {
   padding: 20px;
-  color: #F27777;
+  color: #f27777;
   font-size: 30px;
 }
-.divDire{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.divDire {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }

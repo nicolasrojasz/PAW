@@ -1,0 +1,36 @@
+<div class="container justify-content-center align-items-center col-4 ">
+    <div class="col-auto p-4 ">
+        <h3>Ultimos Pasos!!</h3>
+        <div class=" form">
+            <p>Correo:</p>
+            <input type="text" class="form-control" [(ngModel)]="usuario" />
+            <p>Nueva Contraseña:</p>
+            <input type="text" class="form-control" [(ngModel)]="contrasena" />
+            <p>Enlazate el usuario al perfil que creaste:</p>
+
+            <select class="form-select" [(ngModel)]="comboPersona" (change)="capturarPersona()">
+                <option *ngFor="  let persona of selectPersonas" [value]="persona.cedula">
+                    {{persona.nombre}} {{persona.apellidos}}
+                </option>
+            </select>
+            <p>¿Tienes alguna empresa que te patrocine?:</p>
+
+            <div class="mt-2 mb-2">
+                <select class="form-select" [(ngModel)]="comboEmpresa" (change)="capturarEmpresa()">
+                    <option *ngFor="  let empresa of selectEmpresas" [value]="empresa.NIT">
+                        {{empresa.razon_social}}
+                    </option>
+                </select>
+            </div>
+
+            <p>Apodo o NickName:</p>
+            <input type="text" class="form-control" [(ngModel)]="apodo" />
+
+            <div class="mt-4 text-center">
+
+                <button class="btn btn-primary" (click)="registrar()">Confirmar</button>
+
+            </div>
+        </div>
+    </div>
+</div>

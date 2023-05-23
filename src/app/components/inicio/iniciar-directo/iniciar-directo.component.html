@@ -1,0 +1,20 @@
+<div class="container  mt-4 vh-100 justify-content-center align-items-center col-4">
+    <div class="col-auto p-4 ">
+        <h3>Vamos a iniciar Directo!</h3>
+        <div class=" form">
+            <h4>Inicias como:</h4>
+            <p>{{apodo}}</p>
+            <h4>Empresa que te patrocina:</h4>
+            <p>{{empresa}}</p>
+
+            <div>
+                <p>Titulo del directo:</p>
+                <input type="text" class="form-control" [(ngModel)]="descripcion">
+            </div>
+
+            <div class="mt-4 text-center">
+                <button class="btn btn-primary" (click)="iniciarDirecto()">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>
